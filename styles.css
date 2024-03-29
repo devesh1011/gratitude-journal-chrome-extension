@@ -1,7 +1,7 @@
 body {
   font-family: Arial, sans-serif;
   background-image: url("/images/download.jpeg");
-  background-size: contain;
+  background-size: cover;
   background-repeat: no-repeat;
 }
 
@@ -11,13 +11,20 @@ h1 {
 }
 
 .container {
-  width: 300px;
-  height: 300px;
+  width: 500px;
   margin: 20px auto;
 }
 
 .btn {
   margin: 10px auto;
+}
+
+.badge {
+  color: #333;
+}
+
+.card {
+  margin-left: 0px;
 }
 
 /* entries html */

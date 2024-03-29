@@ -3,27 +3,14 @@
   "name": "Gratitude Journal",
   "version": "1.0",
   "description": "Record something you're grateful for each day.",
-  "permissions": ["storage"],
+  "permissions": ["storage", "tabs"], 
   "background": {
     "service_worker": "service-worker.js"
   },
-  "content_scripts": [
-    {
-      "matches": ["<all_urls>"],
-      "js": ["entries.js"],
-      "run_at": "document_idle"
-    }
-  ],
   "action": {
     "default_popup": "popup.html",
     "default_icon": {
       "128": "/images/icon128.jpeg"
     }
-  },
-  "web_accessible_resources": [
-    {
-      "resources": ["entries.html"],
-      "matches": ["<all_urls>"]
-    }
-  ]
+  }
 }
